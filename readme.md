@@ -30,7 +30,7 @@ erDiagram
 |   Delete   | /event/:id |   DELETE  | Delete a specific event   |
 
 ### API
-[Link]()
+[Deployed Backend Link](https://myevents-backend.onrender.com)
 
 ### User Stories
 - As a user, I can see a list of all the events when I visit the page
