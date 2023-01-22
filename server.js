@@ -4,11 +4,11 @@
 require("dotenv").config()
 const { DATABASE_URL, PORT } = process.env
 const express = require("express")
-const mongoose = require("mongoose")
+const mongoose = require("./models/connection")
 const cors = require("cors")
 const morgan = require("morgan")
 const app = express() // Create Express App Object
-
+const Event = require('./models/event')
 
 // ----------------------------
 // Middleware------------------
@@ -29,6 +29,7 @@ app.get("/myevents", async (req, res) => {
     try{
         res.json(await Event.find({}))
     } catch(error){
+        console.log(error);
         res.status(400).json(error)
     }
 })
