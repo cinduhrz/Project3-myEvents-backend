@@ -8,8 +8,6 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 const morgan = require("morgan")
 const app = express() // Create Express App Object
-const bodyParser = require("body-parser")
-
 
 // ----------------------------
 // Connect to DB---------------
