@@ -7,7 +7,7 @@ mongoose.connection.on("open", () => {
       title: "End of SEIR-920 Cohort Party",
       url: "https://zoom.us/",
       dateTime: "2023-04-01 04:30:00.001",
-      description: "Celebratory party for completing the Sofware Engineering course at GE",
+      description: "Celebratory party for completing the Software Engineering course at GE",
       username: "Alexei"
     },
     {
