@@ -21,7 +21,7 @@ mongoose.connection.on("open", () => {
       title: "Unit Four - tumeric seircohort",
       url: "https://turmeric.seircohort.com/",
       dateTime: "2023-01-31 06:30:00.001",
-      description: "Alex's Birthday Party celebration",
+      description: "Intro to Python and Django",
       username: "Rene"
     },
   ]
