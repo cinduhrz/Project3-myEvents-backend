@@ -9,7 +9,8 @@ const cors = require("cors")
 const morgan = require("morgan")
 const app = express() // Create Express App Object
 const Event = require('./models/event')
-
+const AuthRouter = require("./controllers/user")
+const auth = require("./auth")
 // ----------------------------
 // Middleware------------------
 // ----------------------------
@@ -20,9 +21,11 @@ app.use(express.json())
 // ----------------------------
 // Routes----------------------
 // ----------------------------
-app.get("/", (req, res) => {
-    res.send("Hello World")
+// Authorization Router
+app.get("/", auth, (req, res) => {
+    res.json(req.payload)
 })
+app.use("/auth", AuthRouter)
 
 // Index Route
 app.get("/myevents", async (req, res) => {
